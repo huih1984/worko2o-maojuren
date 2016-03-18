@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /jsp/admin
+Disallow: /jsp/employer/hunter_resume_r.jsp
+Disallow:  /jsp/hunter/detail_r.jsp

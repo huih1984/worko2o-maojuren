@@ -1,0 +1,55 @@
+.addedit {
+    border: 1px solid #1C658B;
+    background: #FDF9CD;
+    z-index: 212;
+    position: absolute;
+    outline: none;
+}
+
+.fastmachine {
+    border: 1px solid #C1C1C1;
+    padding: 6px 0 4px;
+    position: absolute;
+    right: 0;
+    top: -30px;
+    z-index: 199;
+    background: #fff;
+}
+
+.credit {
+    display: none;
+    border: 1px solid #1C658B;
+}
+
+input.tedit {
+    border: 0px;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+
+input.tedit:focus {
+    border: 1px solid #1C658B;
+    background: #FDF9CD;
+}
+
+textarea.tedit {
+    border: 0px;
+    width: 420px;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+
+textarea.tedit:focus {
+    border: 1px solid #1C658B;
+    background: #FDF9CD;
+}
+
+input.l.tedit {
+    border: 0px;
+    width: 120px;
+}
+
+input.l.tedit:focus {
+    border: 1px solid #1C658B;
+    background: #FDF9CD;
+}

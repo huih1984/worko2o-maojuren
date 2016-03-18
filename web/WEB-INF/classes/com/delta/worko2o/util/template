@@ -1,0 +1,24 @@
+package ${PACKAGE};
+
+import org.nutz.dao.entity.annotation.Column;
+import org.nutz.dao.entity.annotation.Name;
+import org.nutz.dao.entity.annotation.Table;
+import org.nutz.dao.entity.annotation.Id;
+
+/**
+ * <Description> ${TABLENAME}的Pojo<br>
+ * 
+ * @author 工具生成<br>
+ * @version 1.0<br>
+ * @CreateDate ${DATE} <br>
+ * @since V1.0<br>
+ */
+${TABLE}
+public class ${CLASSNAME}  {
+
+    /**
+     * serialVersionUID
+     */
+    private static final long serialVersionUID = 1L;
+${CODE}
+}

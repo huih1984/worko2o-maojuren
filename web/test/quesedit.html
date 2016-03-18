@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>注册</title>
+    <script type="text/javascript" src="/js/jquery.min.js"/>
+    <style>
+        body {
+            background: black;
+        }
+
+        #myDiv {
+            background: #fff;
+            width: 250px;
+            height: 250px;
+            display: none;
+        }
+    </style>
+</head>
+
+<script type="text/javascript">
+    var myDiv = $("#myDiv");
+    $(function () {
+        $("#btn").click(function (event) {
+            showDiv();//调用显示DIV方法
+            $(document).one("click", function () {//对document绑定一个影藏Div方法
+                $(myDiv).hide();
+            });
+            event.stopPropagation();//阻止事件向上冒泡
+        });
+        $(myDiv).click(function (event) {
+            event.stopPropagation();//阻止事件向上冒泡
+        });
+    });
+    function showDiv() {
+        $(myDiv).fadeIn();
+    }
+</script>
+<body>
+<div id="myDiv">
+    This is a div;
+</div>
+<input id="btn" type="button" value="显示DIV"/>
+</body>
+</html>

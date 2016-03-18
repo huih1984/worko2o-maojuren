@@ -1,0 +1,22 @@
+<html>
+<head>
+    <script language="javascript" type="text/javascript">
+        function GetData() {
+            url = "method.jsp?action=showMsg";
+            try {
+                DataLoad.src = url;
+            } catch (e) {
+                return false;
+            }
+            {
+                var timeoutid = setTimeout("GetData()", 2000)
+            }
+        }
+    </script>
+    <script id="DataLoad" language="javascript" type="text/javascript" defer></script>
+</head>
+<body onload="javascript:GetData();">
+<span id="loadContent">数据载入中……</span>
+</body>
+</html>
+</span>
